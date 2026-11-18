@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8ff">
+  <title>Te damos la bienvenida | Lumina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Lumina, inicio">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Lumina</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="index.html">Inicio</a>
+        <a class="nav-link" href="#primeros-pasos">Características</a>
+        <a class="nav-link" href="#guia">Ayuda</a>
+      </nav>
+      <div class="header-tools">
+        <label class="language-picker">
+          <span aria-hidden="true">◎</span>
+          <span class="visually-hidden">Idioma</span>
+          <select aria-label="Idioma">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="pt">PT</option>
+          </select>
+        </label>
+        <span class="status-pill"><span class="status-dot"></span>Operativo</span>
+        <div class="user-avatar" aria-label="Perfil de usuario">S</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="welcome-main">
+    <div class="welcome-ambient" aria-hidden="true"></div>
+    <div class="welcome-content">
+      <div class="account-toolbar">
+        <div class="account-details">
+          <span class="account-icon" aria-hidden="true">✓</span>
+          <span><small>Identificador de cuenta</small><strong>sofia.mendez@lumina.io · Plan Pro Trial</strong></span>
+        </div>
+        <button class="logout-button" type="button"><span aria-hidden="true">↪</span> Cerrar sesión</button>
+      </div>
+
+      <section class="welcome-hero card">
+        <div class="hero-copy">
+          <span class="success-badge"><span class="status-dot"></span> Cuenta activada con éxito</span>
+          <h1>¡Te damos la bienvenida a bordo, <span>Sofía</span>!</h1>
+          <p>Tu cuenta ha sido creada exitosamente. Estamos felices de que formes parte de nuestra comunidad. Todo está preparado para que comiences a optimizar tu flujo de trabajo desde hoy mismo.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#panel">Ir al Panel de Control <span aria-hidden="true">→</span></a>
+            <a class="secondary-button" href="#primeros-pasos"><span aria-hidden="true">☷</span> Ver Primeros Pasos</a>
+          </div>
+        </div>
+        <div class="workspace-badge" aria-label="Espacio Lumina activo">
+          <span class="rocket-icon" aria-hidden="true">↗</span>
+          <strong>Espacio Listo</strong>
+          <small>Lumina Workspace v2.4</small>
+          <span class="active-badge">✓ Activo</span>
+        </div>
+      </section>
+
+      <div class="welcome-grid">
+        <section class="onboarding-card card" id="primeros-pasos">
+          <div class="onboarding-heading">
+            <div><span class="eyebrow plain">Ruta de inicio</span><h2>Primeros pasos recomendados</h2></div>
+            <span class="completion-pill">2 de 5 completados</span>
+          </div>
+          <div class="progress-panel">
+            <div class="progress-label"><strong>Progreso del Onboarding</strong><strong>40%</strong></div>
+            <div class="progress-track" role="progressbar" aria-label="Progreso del onboarding" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              <span></span>
+            </div>
+            <small>Completa estas 3 tareas para desbloquear todas las funciones avanzadas y sincronización automática.</small>
+          </div>
+          <ol class="checklist">
+            <li class="checklist-item complete">
+              <span class="step-number">✓</span>
+              <span class="step-copy"><strong>Confirmar correo electrónico</strong><small>Verificado automáticamente con SSO</small></span>
+              <span class="step-status">Listo</span>
+            </li>
+            <li class="checklist-item complete">
+              <span class="step-number">✓</span>
+              <span class="step-copy"><strong>Creación del espacio de trabajo</strong><small>Espacio “Sofía-Studio” inicializado</small></span>
+              <span class="step-status">Listo</span>
+            </li>
+            <li class="checklist-item">
+              <span class="step-number">3</span>
+              <span class="step-copy"><strong>Completa tu perfil profesional</strong><small>Sube una fotografía, añade tu rol de diseño y define tu zona horaria.</small></span>
+              <a class="small-action primary-action" href="#perfil">Completar</a>
+            </li>
+            <li class="checklist-item">
+              <span class="step-number">4</span>
+              <span class="step-copy"><strong>Explora las herramientas clave</strong><small>Descubre los módulos de analítica y automatizaciones de Lumina.</small></span>
+              <a class="small-action" href="#herramientas">Explorar</a>
+            </li>
+            <li class="checklist-item">
+              <span class="step-number">5</span>
+              <span class="step-copy"><strong>Invita a tu equipo</strong><small>Colabora en tiempo real sumando a colegas con 3 asientos gratuitos.</small></span>
+              <a class="small-action" href="#equipo">Invitar</a>
+            </li>
+          </ol>
+        </section>
+
+        <aside class="welcome-aside">
+          <section class="collaboration-card card">
+            <div class="card-title-row"><h2>Espacio Colaborativo</h2><span class="muted-icon" aria-hidden="true">♧</span></div>
+            <div class="team-summary">
+              <div class="team-avatars" aria-label="Cinco accesos disponibles">
+                <span>SM</span><span>AL</span><span>CR</span><span>+2</span>
+              </div>
+              <small>Tu organización cuenta con 5 accesos disponibles.</small>
+            </div>
+            <p>Comparte reportes encriptados y asigna flujos de trabajo con permisos granulares para cada miembro.</p>
+            <a class="text-action" href="#equipo">Invitar por correo <span aria-hidden="true">↗</span></a>
+          </section>
+
+          <section class="analytics-card card">
+            <div class="analytics-heading"><span class="analytics-icon" aria-hidden="true">⌁</span><h2>Métricas en Tiempo Real</h2></div>
+            <p>Visualiza en vivo el rendimiento de tus campañas e integraciones con nuestro motor predictivo.</p>
+            <div class="chart-card">
+              <div class="chart-label"><span>Rendimiento proyectado</span><strong>+28.4%</strong></div>
+              <svg class="sparkline" viewBox="0 0 300 60" role="img" aria-label="Gráfico de rendimiento proyectado al alza">
+                <defs><linearGradient id="chart-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#4f46e5" stop-opacity=".3"/><stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 45 C30 40 60 50 90 32 C120 15 150 30 180 22 C210 14 240 25 270 12 L300 8 L300 60 L0 60Z" fill="url(#chart-fill)"/>
+                <path d="M0 45 C30 40 60 50 90 32 C120 15 150 30 180 22 C210 14 240 25 270 12 L300 8" fill="none" stroke="#4f46e5" stroke-linecap="round" stroke-width="2.5"/>
+              </svg>
+            </div>
+          </section>
+
+          <a class="guide-card card" id="guia" href="#guia-inicio">
+            <span class="guide-icon" aria-hidden="true">▤</span>
+            <span><strong>Guía de Inicio Rápido</strong><small>Aprende lo básico en 4 minutos</small></span>
+            <span class="guide-arrow" aria-hidden="true">↗</span>
+          </a>
+        </aside>
+      </div>
+
+      <section class="dashboard-banner card">
+        <div class="banner-copy">
+          <span class="banner-icon" aria-hidden="true">⌁</span>
+          <span><strong>¿Lista para explorar tu nuevo espacio?</strong><small>Puedes volver a esta guía de onboarding en cualquier momento desde los ajustes de tu cuenta.</small></span>
+        </div>
+        <div class="banner-actions">
+          <button class="logout-button" type="button"><span aria-hidden="true">↪</span> Cerrar sesión</button>
+          <a class="primary-button" href="#panel">Entrar al Panel <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span> © 2024 Lumina Platform Inc. Todos los derechos reservados.</a>
+      <nav aria-label="Enlaces legales">
+        <a href="#privacidad">Privacidad</a>
+        <a href="#terminos">Términos</a>
+        <a href="#soporte">Soporte</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

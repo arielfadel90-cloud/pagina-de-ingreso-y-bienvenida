@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8ff">
+  <title>Crear cuenta | Lumina</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Lumina, inicio">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Lumina</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
+        <a class="nav-link" href="#beneficios">Características</a>
+        <a class="nav-link" href="#soporte">Ayuda</a>
+      </nav>
+      <div class="header-tools">
+        <label class="language-picker">
+          <span aria-hidden="true">◎</span>
+          <span class="visually-hidden">Idioma</span>
+          <select aria-label="Idioma">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="pt">PT</option>
+          </select>
+        </label>
+        <span class="status-pill"><span class="status-dot"></span>Operativo</span>
+        <div class="user-avatar" aria-label="Perfil de usuario">L</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="signup-main">
+    <div class="ambient ambient-left" aria-hidden="true"></div>
+    <div class="ambient ambient-right" aria-hidden="true"></div>
+    <div class="ambient ambient-center" aria-hidden="true"></div>
+
+    <div class="signup-layout">
+      <section class="signup-card card">
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow"><span aria-hidden="true">◆</span> Acceso anticipado · Plan Starter</span>
+            <h1>Crea tu cuenta</h1>
+            <p>Únete a miles de profesionales y potencia tus proyectos hoy mismo.</p>
+          </div>
+
+          <div class="social-buttons" aria-label="Opciones de registro">
+            <button class="social-button" type="button"><span class="google-mark" aria-hidden="true">G</span>Google</button>
+            <button class="social-button" type="button"><span class="github-mark" aria-hidden="true">●</span>GitHub</button>
+          </div>
+
+          <div class="divider"><span>o regístrate con email</span></div>
+
+          <form id="register-form" class="signup-form" onsubmit="event.preventDefault()">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="full-name">Nombre y Apellido</label>
+                <div class="input-wrap">
+                  <span class="field-icon" aria-hidden="true">♙</span>
+                  <input id="full-name" name="name" autocomplete="name" placeholder="Carlos Mendoza" required type="text">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="age-input">Edad</label>
+                <div class="input-wrap">
+                  <span class="field-icon" aria-hidden="true">◷</span>
+                  <input id="age-input" name="age" min="16" max="110" placeholder="28" required type="number">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email-address">Correo electrónico</label>
+              <div class="input-wrap">
+                <span class="field-icon" aria-hidden="true">✉</span>
+                <input id="email-address" name="email" autocomplete="email" placeholder="carlos@empresa.com" required type="email">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <div class="label-row">
+                <label for="password">Contraseña</label>
+                <span id="strength-label" class="strength-label">Seguridad: Media</span>
+              </div>
+              <div class="input-wrap">
+                <span class="field-icon" aria-hidden="true">♙</span>
+                <input id="password" name="password" autocomplete="new-password" placeholder="••••••••••••" required type="password">
+                <button id="toggle-password" class="password-toggle" type="button" aria-label="Mostrar u ocultar contraseña" aria-pressed="false">
+                  <span id="password-visibility-icon" aria-hidden="true">◉</span>
+                </button>
+              </div>
+              <div class="strength-bars" aria-hidden="true">
+                <span id="bar-1" class="strength-bar filled"></span>
+                <span id="bar-2" class="strength-bar filled"></span>
+                <span id="bar-3" class="strength-bar"></span>
+                <span id="bar-4" class="strength-bar"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="confirm-password">Confirmar contraseña</label>
+              <div class="input-wrap">
+                <span class="field-icon" aria-hidden="true">♙</span>
+                <input id="confirm-password" name="confirm-password" autocomplete="new-password" placeholder="••••••••••••" required type="password">
+                <span id="match-status" class="match-status" aria-live="polite" aria-label="Aún no se ha confirmado la coincidencia">◷</span>
+              </div>
+            </div>
+
+            <div class="terms-row">
+              <input id="terms" name="terms" required type="checkbox">
+              <label for="terms">Acepto los <a href="#terminos">Términos de Servicio</a> y la <a href="#privacidad">Política de Privacidad</a> de Lumina.</label>
+            </div>
+
+            <button class="primary-button submit-button" type="submit">
+              <span>Crear cuenta gratuita</span><span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="signin-prompt">
+          ¿Ya tienes una cuenta? <a href="#iniciar-sesion">Iniciar sesión <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <aside class="signup-aside" id="beneficios">
+        <section class="benefits-card card">
+          <div class="aside-heading">
+            <span class="eyebrow plain">Por qué Lumina</span>
+            <span class="rating-stars" aria-label="5 de 5 estrellas">★★★★★</span>
+          </div>
+          <h2>Construido para equipos modernos de alto rendimiento</h2>
+          <p>Gestiona flujos de trabajo, escala proyectos y toma el control de tus operaciones con arquitectura analítica de última generación.</p>
+
+          <ul class="benefit-list">
+            <li class="benefit-item">
+              <span class="benefit-icon violet" aria-hidden="true">✓</span>
+              <span><strong>Seguridad garantizada</strong><small>Cifrado de extremo a extremo y cumplimiento SOC-2 Tipo II activo.</small></span>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon purple" aria-hidden="true">✳</span>
+              <span><strong>Soporte 24/7 en español</strong><small>Equipo técnico senior disponible sin esperas para resolver tus dudas.</small></span>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon blue" aria-hidden="true">◇</span>
+              <span><strong>Sin cargos ocultos</strong><small>14 días de prueba con todas las funciones Pro. Sin tarjeta requerida.</small></span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="testimonial-card card" id="soporte">
+          <div class="testimonial-person">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2s4dUJi5ebPNNzoytgYw0FQFDyFXoEj7oBoGl4pfa1R1ZRsjhGEQJZK1QweLaagYZWsfDg-Rhe9jGazzglc9IlNH_7FGixoGu5ZIe8AKeNQkUCgaTnNa0llZYuqXwq-Xjz3e3b6NuwRh5cHa0BrVvKzIKjVyOvXaPz-MeNEsgEDzJAFAJrIAcXOwmPAtRMR_C6hLqWm81MXeEMwzfszC8lJpew-KQb4oCRHPqM6A" alt="Elena Ramos, líder de producto">
+            <div><strong>Elena Ramos</strong><small>Líder de Producto en Nexus Data</small></div>
+          </div>
+          <blockquote>Lumina aceleró los tiempos de entrega de nuestro equipo en más de un 40%. La interfaz es sumamente intuitiva y la confiabilidad técnica es insuperable.</blockquote>
+          <div class="review-summary"><span>Calificación promedio</span><strong>4.9 / 5.0 <small>(1,420+ reseñas)</small></strong></div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span> © 2024 Lumina Platform Inc. Todos los derechos reservados.</a>
+      <nav aria-label="Enlaces legales">
+        <a href="#privacidad">Privacidad</a>
+        <a href="#terminos">Términos</a>
+        <a href="#soporte">Soporte</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
